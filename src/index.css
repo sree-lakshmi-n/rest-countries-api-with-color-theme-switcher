@@ -1,0 +1,14 @@
+:root {
+  /* COLORS */
+  /* Primary */
+  --d-mode-dark-blue: hsl(209, 23%, 22%);
+  --l-mode-very-dark-blue: hsl(200, 15%, 8%);
+
+  /* Tints */
+  --d-mode-very-dark-blue: hsl(207, 26%, 17%);
+
+  /* Neutrals */
+  --l-mode-dark-gray: hsl(0, 0%, 52%);
+  --l-mode-very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
