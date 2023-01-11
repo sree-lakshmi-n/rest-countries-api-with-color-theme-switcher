@@ -12,4 +12,9 @@
   --l-mode-dark-gray: hsl(0, 0%, 52%);
   --l-mode-very-light-gray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
+
+  /* FONT SIZES */
+  --font-wt-light: 300;
+  --font-wt-semi-bold: 600;
+  --font-wt-extra-bold: 800;
 }
