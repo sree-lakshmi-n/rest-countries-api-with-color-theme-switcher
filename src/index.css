@@ -30,3 +30,20 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+
+/* general styling */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: var(--font-wt-light);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.light__body {
+  background-color: var(--l-mode-very-light-gray);
+  color: var(--l-mode-very-dark-blue);
+}
+.dark__body {
+  background-color: var(--d-mode-very-dark-blue);
+  color: var(--white);
+}
