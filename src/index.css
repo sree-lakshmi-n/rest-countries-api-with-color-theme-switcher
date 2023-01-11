@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
 :root {
   /* COLORS */
   /* Primary */
@@ -17,4 +18,8 @@
   --font-wt-light: 300;
   --font-wt-semi-bold: 600;
   --font-wt-extra-bold: 800;
+}
+
+html {
+  font-size: 62.5%;
 }
