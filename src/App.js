@@ -1,17 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
+import Home from "./Pages/Home/Home";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  return (
-    <div
-      className={`container ${
-        isDarkMode ? "container__dark" : "container__light"
-      }`}
-    >
-      Hello
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
