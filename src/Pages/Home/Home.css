@@ -1,5 +1,5 @@
 .container {
-  min-height: 100rem;
+  min-height: 100vh;
 }
 .container__light {
   background-color: var(--l-mode-very-light-gray);
