@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Header from "../../Components/Header/Header";
+import "./Home.css";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -8,7 +10,7 @@ export default function Home() {
         isDarkMode ? "container__dark" : "container__light"
       }`}
     >
-      Hello
+      <Header />
     </div>
   );
 }
