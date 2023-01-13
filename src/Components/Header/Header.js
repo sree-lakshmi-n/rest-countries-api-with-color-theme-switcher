@@ -12,7 +12,7 @@ export default function Header(props) {
     >
       <FlexWrapper className="header-content">
         <h1 className="header__title">Where in the world?</h1>
-        <ThemeBtn />
+        <ThemeBtn theme={props.theme} onThemeChange={props.onThemeChange} />
       </FlexWrapper>
     </div>
   );
