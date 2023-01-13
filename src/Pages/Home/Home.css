@@ -1,11 +1,16 @@
+.light-theme {
+  --text-color: hsl(200, 15%, 8%);
+  --elements-bg-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 98%);
+  --input-color: hsl(0, 0%, 52%);
+}
+.dark-theme {
+  --text-color: hsl(0, 0%, 100%);
+  --elements-bg-color: hsl(209, 23%, 22%);
+  --bg-color: hsl(207, 26%, 17%);
+}
 .container {
   min-height: 100vh;
-}
-.container__light {
-  background-color: var(--l-mode-very-light-gray);
-  color: var(--l-mode-very-dark-blue);
-}
-.container__dark {
-  background-color: var(--d-mode-very-dark-blue);
-  color: var(--white);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
