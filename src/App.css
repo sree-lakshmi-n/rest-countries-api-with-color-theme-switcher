@@ -1,0 +1,9 @@
+:root {
+  /* Box Shadow Colors */
+  --translucent-black: rgba(0, 0, 0, 0.25);
+
+  /* FONT SIZES */
+  --font-wt-light: 300;
+  --font-wt-semi-bold: 600;
+  --font-wt-extra-bold: 800;
+}
