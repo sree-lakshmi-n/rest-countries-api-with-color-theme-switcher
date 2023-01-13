@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import FlexWrapper from "../../UI/FlexWrapper/FlexWrapper";
+import React from "react";
 import "./ThemeBtn.css";
 
 export default function ThemeBtn(props) {
