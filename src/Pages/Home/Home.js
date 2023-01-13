@@ -4,13 +4,12 @@ import "./Home.css";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const themeChangeHandler = (theme) => {
+    setIsDarkMode(theme);
+  };
   return (
-    <div
-      className={`container ${
-        isDarkMode ? "container__dark" : "container__light"
-      }`}
-    >
-      <Header />
+    <div className={`container ${isDarkMode ? "dark-theme" : "light-theme"}`}>
+      <Header onThemeChange={themeChangeHandler} theme={isDarkMode} />
     </div>
   );
 }
