@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import FlexWrapper from "../../UI/FlexWrapper/FlexWrapper";
 import "./ThemeBtn.css";
 
 export default function ThemeBtn(props) {
+  const themeBtnClickHandler = (event) => {
+    props.theme ? props.onThemeChange(false) : props.onThemeChange(true);
+  };
   return (
-    <FlexWrapper className="btn-theme">
+    <button className="btn-theme" onClick={themeBtnClickHandler}>
       <span className="theme-icon">
-        <ion-icon
-          name={`${props.isDarkMode ? "sunny" : "moon"}-outline`}
-        ></ion-icon>
+        <ion-icon name={`${props.theme ? "sunny" : "moon"}-outline`}></ion-icon>
       </span>
       <span className="theme-name">{`${
-        props.isDarkMode ? "Light" : "Dark"
+        props.theme ? "Light" : "Dark"
       } mode`}</span>
-    </FlexWrapper>
+    </button>
   );
 }
