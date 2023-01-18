@@ -4,13 +4,13 @@ import CountryCard from "../CountryCard/CountryCard";
 export default function CountryCardWrapper(props) {
   const [countriesList, setCountriesList] = useState("");
   useEffect(() => {
-    fetch("https://restcountries.com/v2/all")
+    fetch(props.url)
       .then((response) => response.json())
       .then((data) => {
         setCountriesList(data);
         console.log(data);
       });
-  }, [props.theme]);
+  }, [props.url]);
 
   return (
     <div className="country-card-wrapper">
