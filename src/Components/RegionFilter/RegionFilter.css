@@ -1,0 +1,24 @@
+.region-filter {
+  order: 1;
+  min-width: 15rem;
+  width: 10%;
+  box-shadow: 0px 2px 9px var(--translucent-light);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.region-select {
+  /* A reset of styles, including removing the default dropdown arrow */
+  appearance: none;
+  /* Additional resets for further consistency */
+  font-family: inherit;
+  color: inherit;
+  padding: 0.8rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: inherit;
+}
+/* to gain removal of the arrow for lower IE versions */
+.region-select::-ms-expand {
+  display: none;
+}
