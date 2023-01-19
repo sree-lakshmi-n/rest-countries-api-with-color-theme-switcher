@@ -22,6 +22,26 @@ export default function CountryCard(props) {
             Capital:{" "}
             <span className="country-capital-value">{props.capital}</span>
           </p>
+          {props.languages && (
+            <p className="country-languages">
+              Languages:{" "}
+              <span className="country-languages-value">{props.languages}</span>
+            </p>
+          )}
+          {props.currencies && (
+            <p className="country-currencies">
+              Currencies:{" "}
+              <span className="country-currencies-value">
+                {props.currencies}
+              </span>
+            </p>
+          )}
+          {props.borders && (
+            <p className="country-borders">
+              Borders:{" "}
+              <span className="country-borders-value">{props.borders}</span>
+            </p>
+          )}
         </FlexWrapper>
       </div>
     </FlexWrapper>
