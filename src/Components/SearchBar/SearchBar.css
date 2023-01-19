@@ -18,4 +18,5 @@
   outline: none;
   font-family: inherit;
   color: inherit;
+  font-weight: var(--font-wt-semi-bold);
 }
