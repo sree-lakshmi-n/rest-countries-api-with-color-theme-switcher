@@ -1,5 +1,6 @@
 import "./SearchBar.css";
 import React from "react";
+import FlexWrapper from "../../UI/FlexWrapper/FlexWrapper";
 
 export default function SearchBar(props) {
   const inputChangeHandler = (event) => {
@@ -11,9 +12,14 @@ export default function SearchBar(props) {
     }
   };
   return (
-    <div>
-      <ion-icon name="search-outline"></ion-icon>
-      <input type="text" onInput={inputChangeHandler}></input>
-    </div>
+    <FlexWrapper className="search-bar">
+      <ion-icon className="search-icon" name="search-outline"></ion-icon>
+      <input
+        type="text"
+        onInput={inputChangeHandler}
+        className="search-input"
+        placeholder="Search for a country..."
+      ></input>
+    </FlexWrapper>
   );
 }
