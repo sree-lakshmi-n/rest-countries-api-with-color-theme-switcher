@@ -1,9 +1,9 @@
 import "./Checkbox.css";
 import React from "react";
-
+import FlexWrapper from "../../UI/FlexWrapper/FlexWrapper";
 export default function Checkbox(props) {
   return (
-    <div className="checkbox-wrapper">
+    <FlexWrapper className="checkbox-wrapper">
       {Array.from(props.params).map((param, index) => {
         return (
           <div className="checkbox" key={index}>
@@ -16,6 +16,6 @@ export default function Checkbox(props) {
           </div>
         );
       })}
-    </div>
+    </FlexWrapper>
   );
 }
