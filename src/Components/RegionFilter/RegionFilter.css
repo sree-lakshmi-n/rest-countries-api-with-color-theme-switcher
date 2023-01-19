@@ -5,6 +5,11 @@
   box-shadow: 0px 2px 9px var(--translucent-light);
   border-radius: 0.25rem;
   cursor: pointer;
+
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  padding: 1.2rem;
 }
 .region-select {
   /* A reset of styles, including removing the default dropdown arrow */
@@ -12,13 +17,28 @@
   /* Additional resets for further consistency */
   font-family: inherit;
   color: inherit;
-  padding: 0.8rem;
   background: transparent;
   border: none;
   outline: none;
   font-size: inherit;
+  cursor: inherit;
+  grid-area: select;
 }
 /* to gain removal of the arrow for lower IE versions */
 .region-select::-ms-expand {
   display: none;
+}
+/* The downward arrow logic */
+/* Despite defining width and height, the arrow is not displayed. When inspected, its found that the ::after is not actually being allowed it's width.
+
+We resolve this by updating our .region-filter to use CSS grid layout. */
+
+.region-filter::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--text-color);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  grid-area: select;
+  justify-self: end;
 }
