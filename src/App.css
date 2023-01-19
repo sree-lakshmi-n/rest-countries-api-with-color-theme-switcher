@@ -2,7 +2,7 @@
   /* Box Shadow Colors */
   --translucent-black: rgba(0, 0, 0, 0.25);
   --translucent-light-black: rgba(0, 0, 0, 0.0294384);
-  --translucent-dark: rgba(0, 0, 0, 0.0532439)
+  --translucent-light: rgba(0, 0, 0, 0.0532439);
 
   /* FONT SIZES */
   --font-wt-light: 300;
