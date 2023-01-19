@@ -6,14 +6,14 @@ export default function Checkbox(props) {
     <FlexWrapper className="checkbox-wrapper">
       {Array.from(props.params).map((param, index) => {
         return (
-          <div className="checkbox" key={index}>
+          <FlexWrapper className="checkbox" key={index}>
             <label htmlFor={param.param}>{param.param}</label>
             <input
               type={"checkbox"}
               value={param.param}
               onClick={props.onChecked}
             />
-          </div>
+          </FlexWrapper>
         );
       })}
     </FlexWrapper>
