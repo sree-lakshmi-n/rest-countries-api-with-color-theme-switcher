@@ -22,9 +22,13 @@
   flex-direction: column;
   align-items: unset;
   gap: 0.8rem;
+  line-height: 1.4;
 }
 .country-population-value,
 .country-region-value,
-.country-capital-value {
+.country-capital-value,
+.country-currencies-value,
+.country-languages-value,
+.country-borders-value {
   font-weight: var(--font-wt-light);
 }
