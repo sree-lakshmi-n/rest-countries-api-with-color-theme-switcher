@@ -1,0 +1,21 @@
+.search-bar {
+  gap: 1.2rem;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid;
+  width: 30%;
+  border: none;
+  box-shadow: 0px 4px 4px var(--translucent-black);
+}
+.search-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.search-input {
+  border: none;
+  background: transparent;
+  padding: 1.2rem 0;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+  color: inherit;
+}
