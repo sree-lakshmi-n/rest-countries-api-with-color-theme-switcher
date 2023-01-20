@@ -18,10 +18,17 @@ export default function Home() {
 
   useEffect(() => {
     fetch(url)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw Error(response.statusText);
+        } else {
+          return response.json();
+        }
+      })
       .then((data) => {
         setCountriesList(data);
-      });
+      })
+      .catch((err) => setCountriesList(""));
   }, [url, checkList]);
 
   const themeChangeHandler = (theme) => {
@@ -41,12 +48,15 @@ export default function Home() {
         checkList={checkList}
         onCheckboxInput={checkboxInputHandler}
       />
-      <CountryCardWrapper
-        theme={isDarkMode}
-        url={url}
-        countriesList={countriesList}
-        checkList={checkList}
-      />
+      {countriesList && (
+        <CountryCardWrapper
+          theme={isDarkMode}
+          url={url}
+          countriesList={countriesList}
+          checkList={checkList}
+        />
+      )}
+      {!countriesList && <p className="msg__not-found">No countries found</p>}
     </div>
   );
 }
