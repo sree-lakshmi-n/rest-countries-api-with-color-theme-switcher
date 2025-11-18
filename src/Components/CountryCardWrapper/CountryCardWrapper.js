@@ -1,6 +1,7 @@
 import React from "react";
 import "./CountryCardWrapper.css";
 import CountryCard from "../CountryCard/CountryCard";
+
 export default function CountryCardWrapper(props) {
   const params = props.checkList
     .filter((el) => (el.status ? el.param : ""))
