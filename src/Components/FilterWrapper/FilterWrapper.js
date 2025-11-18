@@ -8,8 +8,8 @@ import FlexWrapper from "../../UI/FlexWrapper/FlexWrapper";
 export default function FilterWrapper(props) {
   const [regionValue, setRegionValue] = useState("Asia");
   const checkHandler = (event) => {
-    props.checkList.map((ele) => {
-      if (ele.param == event.target.value) {
+    props.checkList.forEach((ele) => {
+      if (ele.param === event.target.value) {
         ele.status = !ele.status;
         props.onCheckboxInput(props.checkList);
       }
