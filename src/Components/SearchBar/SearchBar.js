@@ -8,7 +8,7 @@ export default function SearchBar(props) {
     if (countryName) {
       props.onInputChange(`https://restcountries.com/v2/name/${countryName}`);
     } else {
-      props.onInputChange("https://restcountries.com/v2/all");
+      props.onInputChange(`https://restcountries.com/v3.1/region/${props.selectedRegion}`);
     }
   };
   return (

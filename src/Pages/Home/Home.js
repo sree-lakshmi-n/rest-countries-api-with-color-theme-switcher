@@ -6,7 +6,7 @@ import "./Home.css";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [url, setUrl] = useState("https://restcountries.com/v2/all");
+  const [url, setUrl] = useState("https://restcountries.com/v3.1/region/Asia");
 
   const [countriesList, setCountriesList] = useState("");
 
